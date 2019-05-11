@@ -1,0 +1,28 @@
+@import '../../../styles/mixins/mixin';
+@import '../../../styles/mixins/grid/bootstrap-grid';
+
+
+.footer {
+
+  &__block-nav {
+    flex-basis: 26%;
+    @include media-breakpoint-up(sm) {
+
+      max-width: 80%;
+    }
+
+    @include media-breakpoint-up(sm) {
+
+      padding-bottom: 2rem;
+    }
+  }
+  &__nav-list {
+
+    &:first-child {
+      margin-right: auto;
+
+    }
+  }
+
+
+}

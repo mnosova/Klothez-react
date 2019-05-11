@@ -1,0 +1,29 @@
+@import '../../styles/mixins/mixin';
+@import '../../styles/mixins/grid/bootstrap-grid';
+
+
+.footer {
+  padding: 3.25rem 0;
+  font-size: $fz-sm;
+  border-top: 1px solid $element-bg-color;
+  line-height: 2em;
+  @include media-breakpoint-up(xs) {
+
+    padding: 2rem 0;
+  }
+
+  &__block-contact {
+    @include media-breakpoint-up(sm) {
+      padding-top: 2rem;
+    }
+
+  }
+
+
+
+  &__text {
+    margin-top: 0.65rem;
+
+  }
+
+}

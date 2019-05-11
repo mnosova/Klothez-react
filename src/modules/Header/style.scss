@@ -1,0 +1,25 @@
+@import '../../styles/mixins/mixin';
+@import '../../styles/mixins/grid/bootstrap-grid';
+
+
+
+header {
+  font-size: $fz-sm;
+  text-transform: uppercase;
+  position: relative;
+
+}
+
+.header-menu {
+  margin: auto 0;
+  padding: 17px 0;
+  border-bottom: 1px solid $element-bg-color;
+
+
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}
+
+
+

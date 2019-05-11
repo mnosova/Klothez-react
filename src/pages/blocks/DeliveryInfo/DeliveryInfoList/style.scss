@@ -1,0 +1,29 @@
+@import '../../../../styles/mixins/mixin';
+@import '../../../../styles/mixins/grid/bootstrap-grid';
+
+
+.delivery-info {
+  &__list {
+    margin-top: 3.125rem;
+    @include media-breakpoint-up(xs){
+      margin-top: 2.5rem;
+
+    }
+  }
+  &__list-item {
+    flex-basis: 22%;
+    margin-bottom:  3.125rem;
+    @include media-breakpoint-up(sm) {
+      flex-basis: 35%;
+    }
+    @include media-breakpoint-up(xs) {
+      flex-basis: 45%;
+    }
+  }
+  &__text {
+
+    margin-top: 25px;
+  }
+}
+
+

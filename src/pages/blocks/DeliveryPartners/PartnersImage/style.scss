@@ -1,0 +1,19 @@
+@import '../../../../styles/mixins/mixin';
+@import '../../../../styles/mixins/grid/bootstrap-grid';
+
+.delivery-partners {
+
+  &__image {
+    padding-top: 2.25rem;
+    margin: auto 0;
+    width: 12%;
+    img {
+      max-width: 100%;
+
+    }
+    @include media-breakpoint-up(sm){
+      width: 26%
+
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../styles/mixins/mixin';
+@import '../../../styles/mixins/grid/bootstrap-grid';
+
+
+.footer {
+  &__block_social {
+    @include media-breakpoint-up(sm) {
+      padding-top: 2rem;
+      border-top: 1px solid $element-bg-color;
+    }
+
+  }
+
+
+  &__social-list {
+
+    li {
+      margin-right: 20px;
+      display: inline-block;
+      @include media-breakpoint-up(sm){
+        margin: 0 10px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,88 @@
+//font size settings
+
+html, body {
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@include media-breakpoint-up(md) {
+  html, body {
+
+    font-size: 14px !important;
+  }
+}
+
+@include media-breakpoint-up(sm){
+  html, body {
+    font-size: 12px !important;
+  }
+}
+
+
+//LINKS
+a {
+  color: $black;
+  cursor: pointer;
+  &:visited {
+
+  }
+  &:hover {
+    text-decoration: none;
+
+  }
+  &:active {
+    text-decoration: none;
+
+  }
+}
+
+//TEXT
+
+.text{
+  font-size: $fz;
+  margin-top: 1.25rem;
+  &--large{
+    font-size: $fz-lg;
+    line-height: normal;
+
+  }
+}
+
+
+
+//usage class
+.center-text {
+  text-align: center;
+}
+.center-text-sm{
+
+  @include media-breakpoint-up(sm){
+    text-align: center;
+  }
+}
+
+h1{
+  font-size: $h1;
+  @include media-breakpoint-up(xs){
+    font-size:$h1-xs;
+  }
+}
+
+h2{
+  font-size: $h2;
+  margin: 0 auto;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: $h3;
+  margin-top: 10px;
+  @include media-breakpoint-up(xs){
+
+    font-size:$fz-lg;
+  }
+}
+

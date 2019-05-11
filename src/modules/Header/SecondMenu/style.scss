@@ -1,0 +1,29 @@
+@import '../../../styles/mixins/mixin';
+@import '../../../styles/mixins/grid/bootstrap-grid';
+.header-secondmenu {
+  position: relative;
+
+  &__navigation {
+    display: none;
+    padding: 16px 4.5rem 19px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid $element-bg-color;
+
+    &_category {
+      display: inline-block;
+      margin-right: 2.5rem;
+      a {
+        text-decoration: none;
+      }
+      &.error {
+        a {
+          color: $error;
+        }
+
+      }
+    }
+  }
+}
