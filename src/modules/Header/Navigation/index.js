@@ -3,10 +3,12 @@ import './style.scss';
 
 let data = [
     {
-        'title': 'Женщинам'
+        'title': 'Женщинам',
+        'menu':'woman'
     },
     {
-        'title': 'Мужчинам'
+        'title': 'Мужчинам',
+        'menu':'man'
     }
 
 
@@ -15,16 +17,22 @@ let data = [
 
 const Navigation = () => (
 
-
         <ul className="header-menu__navigation">
+
             {data.map((item, i) =>
-                <li key={i} className="header-menu__navigation_category">
+                <li key={i} className="header-menu__navigation_category" data-menu={item.menu} onMouseEnter={showMenu}>
                     {item.title}
+
                 </li>
             )}
         </ul>
 
 
+
+);
+
+const showMenu =(e) => (
+    console.log(e.target.dataset.menu)
 
 );
 

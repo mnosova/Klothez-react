@@ -1,65 +1,61 @@
 import React from 'react';
 import './style.scss';
+// import showMenu from './../Navigation';
 
-let nav1 = [
-    {
+let data = [
+    {'nav': [
+        {
 
-        'name': 'Одежда',
-        'link': 'https://google.com'
-    },
-    {
-        'name': 'Обувь',
-        'link': 'Сумки и аксессуары'
-    },
-    {
-        'name': 'Одежда',
-        'link': 'https://google.com'
-    },
-    {
-        'name': 'Распродажа',
-        'link': 'https://google.com'
-    }
+            'name': 'Одежда',
+            'link': 'https://google.com'
+        },
+        {
+            'name': 'Обувь',
+            'link': 'Сумки и аксессуары'
+        },
+        {
+            'name': 'Одежда',
+            'link': 'https://google.com'
+        },
+        {
+            'name': 'Распродажа',
+            'link': 'https://google.com'
+        }
+    ],
+    'menu':'woman'},
+
+    {'nav':[
+        {
+            'name': 'Одежда',
+            'link': 'https://google.com'
+        },
+        {
+            'name': 'Обувь',
+            'link': 'Сумки и аксессуары'
+        },
+        {
+            'name': 'Одежда',
+            'link': 'https://google.com'
+        }
+
+    ],
+    'menu': 'man'}
 
 
 ];
-
-let nav2 = [
-
-
-    {
-        'name': 'Одежда',
-        'link': 'https://google.com'
-    },
-    {
-        'name': 'Обувь',
-        'link': 'Сумки и аксессуары'
-    },
-    {
-        'name': 'Одежда',
-        'link': 'https://google.com'
-    }
-
-
-];
-
-const SecondMenu = () => (
+const SecondMenu = (showMenu) => (
 
     <>
     <nav className="header-secondmenu">
-        <ul className="header-secondmenu__navigation content-container">
-            {nav1.map((item, i) =>
+        {data.map((item, i) =>
+        <ul key={i} className="header-secondmenu__navigation content-container" data-menu={data[i].menu}>
+            {item.nav.map((item,i) =>
                 <li key={i} className="header-secondmenu__navigation_category">
-                    <a href={item.link}>{item.name}</a>
+                        <a href={item.link}>{item.name}</a>
                 </li>
             )}
         </ul>
-        <ul className="header-secondmenu__navigation content-container">
-            {nav2.map((item, i) =>
-                <li key={i} className="header-secondmenu__navigation_category">
-                    <a href={item.link}>{item.name}</a>
-                </li>
-            )}
-        </ul>
+        )}
     </nav>
     </>
 
