@@ -4,6 +4,7 @@ import H2Title from './../../../components/H2Title';
 import Btn from './../../../components/Btn';
 import FaqList from './FaqList'
 import FaqListToggle from './FaqListToggle'
+
 let questions = [
     {'title' : 'Что если я не могу определиться с размером?', 'content':'content'},
     {'title' : 'Если мне ничего не подошло?', 'content':'content'},
@@ -22,6 +23,7 @@ function DeliveryFaq() {
                <FaqList questions={questions}/>
                 <Btn title ="Задать вопрос"/>
                 <FaqListToggle questions={questions}/>
+                <Btn title ="Задать вопрос"/>
             </div>
         </section>
     );

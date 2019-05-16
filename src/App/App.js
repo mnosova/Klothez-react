@@ -1,8 +1,9 @@
 import React from 'react';
+import './style.scss';
 import Header from '../modules/Header/'
 import Footer from '../modules/Footer/'
 import DeliveryPage from '../pages/DeliveryPage'
-import './style.scss';
+
 function App() {
   return (
     <>

@@ -1,5 +1,4 @@
 @import '../../../styles/mixins/mixin';
-@import '../../../styles/mixins/grid/bootstrap-grid';
 $url-icons:  "../../../img/icons/";
 
 
@@ -17,14 +16,14 @@ $url-icons:  "../../../img/icons/";
         transition: width 0.2s ease-in;
         bottom: -3px;
       }
-      &.js-show {
-        font-weight: 600;
+      &:hover{
         &:before {
           width: 100%;
         }
       }
 
     }
+
 
   }
 

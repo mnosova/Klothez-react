@@ -1,10 +1,8 @@
 @import '../../../styles/mixins/mixin';
-@import '../../../styles/mixins/grid/bootstrap-grid';
 .header-secondmenu {
   position: relative;
 
   &__navigation {
-    display: none;
     padding: 16px 4.5rem 19px;
     position: absolute;
     top: 0;
@@ -25,5 +23,6 @@
 
       }
     }
+
   }
 }

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import './style.scss';
-import QuestionItemAcc from '../QuestionItemToggle';
+import QuestionItemToggle from '../QuestionItemToggle';
 
 
 class FaqListAcc extends Component {
@@ -14,8 +13,8 @@ class FaqListAcc extends Component {
             <ul className="delivery-faq__list">
 
                 {questions.map((question, i) =>
-                    <li className={ "delivery-faq__list-item" }  key={i} onClick={this.handleClick.bind(this,i)}>
-                    <QuestionItemAcc question={question} isOpen={this.state.openArticleKey ===i} />
+                    <li className={ (this.state.openArticleKey ===i)? "delivery-faq__list-item" :  "delivery-faq__list-item--hide"}  key={i} onClick={this.handleClick.bind(this,i)}>
+                    <QuestionItemToggle question={question} isOpen={this.state.openArticleKey ===i} />
                     </li>
                 )}
             </ul>

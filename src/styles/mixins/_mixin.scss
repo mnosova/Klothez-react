@@ -1,4 +1,6 @@
-
+@import "grid/breakpoints";
+@import "grid/functions";
+@import "../components/variables";
 /// Grid system
 //
 // Generate semantic grid columns with these mixins.
