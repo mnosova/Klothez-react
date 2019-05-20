@@ -1,33 +1,14 @@
 import React from 'react';
 import './style.scss';
-
-let data = [
-    {
-        'link': 'https://google.com',
-        'class': 'icon--fb'
-    },
-    {
-        'link': 'https://google.com',
-        'class': 'icon--inst'
-    },
-    {
-        'link': 'https://google.com',
-        'class': 'icon--google'
-    },
-    {
-        'link': 'https://google.com',
-        'class': 'icon--yt'
-    }
+import PropTypes from 'prop-types';
 
 
-];
 
-
-const Social = () => (
+const Social = ({social}) => (
 
     <>
     <ul className="footer__social-list">
-        {data.map((item, i) =>
+        {social.map((item, i) =>
             <li key={i}>
                 {/*eslint-disable-next-line*/}
                 <a className={'icon ' + item.class} href={item.link}></a>
@@ -39,5 +20,8 @@ const Social = () => (
 
 
 );
+Social.propTypes ={
+    social : PropTypes.array
+};
 
 export default Social;

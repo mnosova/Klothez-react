@@ -1,59 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './style.scss';
 
-let data = [
-    {'nav':[
-        {
-            'link': 'https://google.com',
-            'name': 'О компании'
-        },
-        {
-            'link': 'https://google.com',
-            'name': 'Контакты'
-        },
-        {
-            'link': 'https://google.com',
-            'name': 'Доставка и оплата'
-        },
-        {
-            'link': 'https://google.com',
-            'name': 'Гарантии'
-        },
-        {
-            'link': 'https://google.com',
-            'name': 'Договор оферты'
-        },
-        {
-            'link': 'https://google.com',
-            'name': 'Политика безопасности'
-        }
 
 
-    ] },
-    {'nav': [
-        {
-            'link': 'https://google.com',
-            'name': 'Новости'
-        },
-        {
-            'link': 'https://google.com',
-            'name': 'Акции'
-        },
-        {
-            'link': 'https://google.com',
-            'name': 'Хиты продаж'
-        },
-        {
-            'link': 'https://google.com',
-            'name': 'Блог'
-        }
-    ]
-
-    }
-
-];
-
-const FooterNav = () => (
+const FooterNav = ({data}) => (
 
     <>
     {data.map((item, i) =>
@@ -69,5 +20,10 @@ const FooterNav = () => (
 
 
 );
+
+FooterNav.propTypes = {
+    data: PropTypes.array
+
+};
 
 export default FooterNav;

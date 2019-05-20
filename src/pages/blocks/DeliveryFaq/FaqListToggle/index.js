@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import QuestionItemToggle from '../QuestionItemToggle';
+import PropTypes from 'prop-types';
 
-
-class FaqListAcc extends Component {
+class FaqListToggle extends Component {
 
     state = {
         openArticleKey: null
@@ -29,6 +29,10 @@ class FaqListAcc extends Component {
 
         })
     };
+
+    propTypes ={
+        questions : PropTypes.array
+    };
 }
 
-export default FaqListAcc;
+export default FaqListToggle;

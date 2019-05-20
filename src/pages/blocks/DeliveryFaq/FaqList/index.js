@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import PropTypes from 'prop-types';
 import QuestionItem from './../QuestionItem';
 
 const FaqList = ({questions}) => (
@@ -13,5 +14,8 @@ const FaqList = ({questions}) => (
         </ul>
 
 );
+FaqList.propTypes ={
+    questions : PropTypes.array
+};
 
 export default FaqList;

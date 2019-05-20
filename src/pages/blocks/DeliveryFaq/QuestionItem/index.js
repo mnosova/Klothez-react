@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import PropTypes from 'prop-types'
 class QuestionItem extends Component {
 constructor(props){
 
@@ -65,7 +65,9 @@ constructor(props){
 
         });
     };
-
+    propTypes = {
+        question: PropTypes.object
+    }
 
 
 

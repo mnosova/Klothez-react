@@ -1,18 +1,13 @@
 import React from 'react';
 import './style.scss';
-
-let data = [
-    {'class': 'icon--master'},
-    {'class': 'icon--visa'},
-    {'class': 'icon--mir'}
-];
+import PropTypes from 'prop-types';
 
 
-const Payment = () => (
+const Payment = ({icons}) => (
 
     <>
     <ul className="footer__social-list">
-        {data.map((item, i) =>
+        {icons.map((item, i) =>
             <li key={i} className={item.class}></li>
         )}
     </ul>
@@ -21,5 +16,9 @@ const Payment = () => (
 
 
 );
+
+Payment.propTypes ={
+    icons : PropTypes.array
+};
 
 export default Payment;

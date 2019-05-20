@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import PropTypes from 'prop-types'
 class QuestionItem extends Component {
 
     componentWillReceiveProps(nextProps){
@@ -48,7 +48,11 @@ class QuestionItem extends Component {
 
 
     }
+propTypes = {
+    question: PropTypes.object,
+    isOpen: PropTypes.bool
 
+}
 }
 
 
