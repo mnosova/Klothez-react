@@ -9,6 +9,7 @@
     border-bottom: 1px solid $element-bg-color;
   }
   &__list-item {
+
     border-top: 1px solid $element-bg-color;
     font-weight: 600;
     padding: 20px 30px 20px 0;
@@ -20,31 +21,66 @@
       background: $black;
       transform: rotate(45deg);
       right: 0;
+      transition: all .3s ease-in;
 
     }
     &:after {
       @include pseudo(30px, initial, 17px, 1px, block);
       background: $black;
       transform: rotate(-45deg);
+      transition: all .3s ease-in;
       right: 0;
+    }
+    &-content {
+      animation-name: slideUp;
+      font-weight: normal;
+      margin-top: 10px;
+      font-size: $fz;
+      animation-duration: 3000ms;
     }
     &--hide {
       @extend .delivery-faq__list-item;
+
       &:before {
         transform: rotate(90deg);
 
       }
       &:after {
-        transform: rotate(180deg);
+        transform: rotate(0deg);
 
       }
-
+      &-content {
+        @extend .delivery-faq__list-item-content;
+        //animation-name: slideDown;
+      }
     }
   }
-  &__content {
-    font-weight: normal;
-    margin-top: 10px;
-    font-size: $fz;
 
+
+}
+
+@keyframes slideUp {
+  0%{
+    max-height: 0;
+    overflow: hidden;
+  }
+  100% {
+    max-height: 1000px;
+    overflow: auto;
   }
 }
+
+@keyframes slideDown {
+  0%{
+
+    max-height: 1000px;
+    overflow: auto;
+
+  }
+  100% {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types'
-class QuestionItem extends Component {
+import PropTypes from 'prop-types';
+import './style.scss';
+class QuestionItemToggle extends Component {
 
     componentWillReceiveProps(nextProps){
          console.log('');
@@ -31,16 +32,12 @@ class QuestionItem extends Component {
     // }
 
     render() {
-        const {question,isOpen} = this.props;
+        const {question} = this.props;
 
         return (
 
             <>
-
-                {question.title}
-
-                {(isOpen)?<p className="delivery-faq__content"> {question.content}</p> : null}
-
+            <p className="delivery-faq__list-item-content"> {question.content}</p>
 
             </>
 
@@ -48,7 +45,7 @@ class QuestionItem extends Component {
 
 
     }
-propTypes = {
+static propTypes = {
     question: PropTypes.object,
     isOpen: PropTypes.bool
 
@@ -56,4 +53,4 @@ propTypes = {
 }
 
 
-export default QuestionItem;
+export default QuestionItemToggle;
