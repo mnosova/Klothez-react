@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/klothez-react/static/css/main.33abad72.chunk.css",
+    "main.js": "/klothez-react/static/js/main.e1449ef1.chunk.js",
+    "main.js.map": "/klothez-react/static/js/main.e1449ef1.chunk.js.map",
+    "runtime~main.js": "/klothez-react/static/js/runtime~main.b5f35192.js",
+    "runtime~main.js.map": "/klothez-react/static/js/runtime~main.b5f35192.js.map",
+    "static/js/2.a8cf5169.chunk.js": "/klothez-react/static/js/2.a8cf5169.chunk.js",
+    "static/js/2.a8cf5169.chunk.js.map": "/klothez-react/static/js/2.a8cf5169.chunk.js.map",
+    "index.html": "/klothez-react/index.html",
+    "precache-manifest.fb242d3713242aaf50b810300da6e34d.js": "/klothez-react/precache-manifest.fb242d3713242aaf50b810300da6e34d.js",
+    "service-worker.js": "/klothez-react/service-worker.js",
+    "static/css/main.33abad72.chunk.css.map": "/klothez-react/static/css/main.33abad72.chunk.css.map",
+    "static/media/style.scss": "/klothez-react/static/media/user.d34750c8.svg",
+    "static/media/check.svg": "/klothez-react/static/media/check.37742cb1.svg",
+    "static/media/img-1.jpg": "/klothez-react/static/media/img-1.af2c2c02.jpg",
+    "static/media/img-1@2x.jpg": "/klothez-react/static/media/img-1@2x.92f11cc3.jpg",
+    "static/media/img-1@3x.jpg": "/klothez-react/static/media/img-1@3x.d0797bb1.jpg",
+    "static/media/img-2.jpg": "/klothez-react/static/media/img-2.09440481.jpg",
+    "static/media/img-2@2x.jpg": "/klothez-react/static/media/img-2@2x.4adb38d7.jpg",
+    "static/media/img-2@3x.jpg": "/klothez-react/static/media/img-2@3x.ad60c221.jpg",
+    "static/media/partner-1@3x.png": "/klothez-react/static/media/partner-1@3x.879a4008.png",
+    "static/media/partner-2@3x.png": "/klothez-react/static/media/partner-2@3x.7a8226b9.png",
+    "static/media/partner-4@3x.png": "/klothez-react/static/media/partner-4@3x.ae34248e.png",
+    "static/media/partner-5@3x.png": "/klothez-react/static/media/partner-5@3x.10013b6e.png",
+    "static/media/partner-6@2x.png": "/klothez-react/static/media/partner-6@2x.ae10bcac.png",
+    "static/media/partner-6@3x.png": "/klothez-react/static/media/partner-6@3x.54f21bfe.png"
+  }
+}
