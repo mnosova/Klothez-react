@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Klothez-react/precache-manifest.1263bac1cf1a945e0c633590744680d1.js"
+  "/Klothez-react/precache-manifest.3d652cbf11ce7bc6998b8107ad53e5b5.js"
 );
 
 self.addEventListener('message', (event) => {

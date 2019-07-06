@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a2faf879162078eec4c3acc7e794213",
+    "revision": "7abf0c1bbef1058f28cecc6a702aa5d6",
     "url": "/Klothez-react/index.html"
   },
   {
-    "revision": "8beb4dc1ebfb76c643be",
-    "url": "/Klothez-react/static/css/main.a5bd66c8.chunk.css"
+    "revision": "34a82819bfb9044ddeaa",
+    "url": "/Klothez-react/static/css/main.21b07214.chunk.css"
   },
   {
-    "revision": "9900d50b4902133938c2",
-    "url": "/Klothez-react/static/js/2.a8cf5169.chunk.js"
+    "revision": "d8bc3c491323b37a1318",
+    "url": "/Klothez-react/static/js/2.38b809ba.chunk.js"
   },
   {
-    "revision": "8beb4dc1ebfb76c643be",
-    "url": "/Klothez-react/static/js/main.e1449ef1.chunk.js"
+    "revision": "34a82819bfb9044ddeaa",
+    "url": "/Klothez-react/static/js/main.67f073d0.chunk.js"
   },
   {
     "revision": "7b62dcfbad06371bbfc5",
