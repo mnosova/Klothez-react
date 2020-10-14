@@ -1,7 +1,7 @@
 import React from 'react';
 
-import H1Title from '../../../components/H1Title';
-import DeliveryInfoList from './DeliveryInfoList';
+import H1Title from '../../../components/H1Title/index';
+import DeliveryInfoList from './DeliveryInfoList/index';
 
 
 let questions = [

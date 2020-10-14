@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import QuestionItemToggle from '../QuestionItemToggle';
+import QuestionItemToggle from '../QuestionItemToggle/index';
 import PropTypes from 'prop-types';
 
 

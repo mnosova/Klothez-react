@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
-import MethodsBlock from './MethodsBlock'
-import H2Title from './../../../components/H2Title'
+import MethodsBlock from './MethodsBlock/index'
+import H2Title from '../../../components/H2Title/index'
 
 function DeliveryMethods() {
     return (

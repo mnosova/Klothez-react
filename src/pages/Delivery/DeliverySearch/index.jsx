@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import Btn from './../../../components/Btn';
+import Btn from '../../../components/Btn/index';
 
 
 function DeliverySearch() {

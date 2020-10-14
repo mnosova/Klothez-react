@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 import PropTypes from 'prop-types';
-import QuestionItem from './../QuestionItem'
+import QuestionItem from '../QuestionItem/index'
 
 const FaqList = ({questions}) => (
 

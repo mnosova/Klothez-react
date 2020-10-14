@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
+import {Link} from "react-router-dom";
 
 
 
@@ -11,7 +12,7 @@ const FooterNav = ({data}) => (
     <ul key ={i} className="footer__nav-list">
         {item.nav.map((item, i) =>
             <li key={i}>
-                <a href={item.link}>{item.name}</a>
+                <Link path to={item.link}>{item.name}</Link>
             </li>
         )}
     </ul>

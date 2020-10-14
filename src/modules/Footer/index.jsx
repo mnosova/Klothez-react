@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.scss';
-import FooterNav from './FooterNav';
-import Social from './Social';
-import Payment from './Payment';
+import FooterNav from './FooterNav/index';
+import Social from './Social/index';
+import Payment from './Payment/index';
 
 let navigation = [
     {'nav':[
         {
-            'link': 'https://google.com',
+            'link': '/about',
             'name': 'О компании'
         },
         {
@@ -15,7 +15,7 @@ let navigation = [
             'name': 'Контакты'
         },
         {
-            'link': 'https://google.com',
+            'link': '/delivery',
             'name': 'Доставка и оплата'
         },
         {

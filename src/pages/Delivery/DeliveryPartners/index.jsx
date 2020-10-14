@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
-import H2Title from './../../../components/H2Title';
-import PartnersImage from './PartnersImage'
+import H2Title from '../../../components/H2Title/index';
+import PartnersImage from './PartnersImage/index'
 function DeliveryPartners() {
     return (
         <section className="section__delivery-partners">

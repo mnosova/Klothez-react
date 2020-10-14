@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.scss';
-import H2Title from './../../../components/H2Title';
-import Btn from './../../../components/Btn';
-import FaqList from './FaqList'
-import FaqListToggle from './FaqListToggle'
+import H2Title from '../../../components/H2Title/index';
+import Btn from '../../../components/Btn/index';
+import FaqList from './FaqList/index'
+import FaqListToggle from './FaqListToggle/index'
 
 let questions = [
     {'title' : 'Что если я не могу определиться с размером?', 'content':'content'},
